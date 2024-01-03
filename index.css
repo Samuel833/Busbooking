@@ -50,37 +50,144 @@ body{
   height: fit-content
 }
 .container{
-  background-color: aqua;
+  background-color: #ffffff;
 }
 .heading > header{
   display: flex;
   justify-content: space-between;
-
+  margin-inline: 5%;
+  padding-block-start: .5rem;
 }
 main{
   position: relative;
   width: 100%;
   height: 50%;
+  background-color: #37485C;
+  color: white;
 }
 .intro{
   padding-block-start: .5em;
   height: 80%;
-  >p{
-    padding-block-start: 1em;
-    padding-block-end: 5em;
-    + img{
-      width: 100%;
-      height:
-
-    }
+  > h2{
+    padding-inline: 5%;
+    +p{
+      padding-inline: 5%;
+      padding-block-start: .5em;
+      padding-block-end: 1em;
+      + img{
+        width: 100%;
+        height: 50%;
+      }
+  }
   }
 }
 form{
   position: absolute;
   top:32%;
   width: 90%;
-  margin: 0 auto;
+  margin-inline: 5%;
+  color: grey;
+  height: 2.5rem;
   > input{
-    width: 90%;
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: .5em;
+    border: 0.1rem solid grey;
+    + i.fa-search{
+      position: absolute;
+      left: 2%;
+      top: 0.7rem;
+    }
   }
+}
+input::placeholder{
+  padding-inline-start: 8%;
+}
+
+section.travelDetails{
+  width: 100%;
+  padding-inline: 5%;
+  padding-block-start: 1%;
+  color: #37485C;
+}
+section.travelDetails  div span{
+  text-transform: uppercase;
+}
+section.details {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 .5rem;
+}
+.location{
+  margin-inline: 5%;
+  padding-block: 1rem;
+  width: 100%;
+  > div:first-child{
+    border-bottom: 1px solid grey;
+  }
+}
+div.route{
+  margin: auto 0;
+
+  margin-inline-end: 5%;
+}
+i.fa-exchange{
+  transform:rotate(90deg);
+}
+section.travelDetails > section:nth-child(2){
+  padding-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+section.travelDetails > section:nth-child(2) 
+.travelTime{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > i{
+      padding-inline-end: 1rem;
+     + div{
+      display: flex;
+      height: fit-content;
+      text-transform: uppercase;
+      > h3{
+        color: #F5CF68;
+        padding-inline-end: .25rem;
+        border-right: 1px solid grey;
+        + h3{
+          color: inherit;
+          padding-inline-start: .25rem;
+          border-right: none;
+        }
+      }
+    }
+    }
+  }
+  div.searchBus{
+    padding-inline: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    border-top: 1px solid grey;
+    > button{
+      color: white;
+      padding-block: .5rem;
+      padding-inline: 1rem;
+      border-color: transparent;
+      border-radius: 2rem;
+      box-shadow: 0 0 .5rem;
+      background-color: #F5CF68;
+      text-transform: uppercase;
+    }
+  }
+
+footer{
+  color: #37485C;
+  display: flex;
+  justify-content: space-around;
+  padding-block: 1rem;
+  border-top: 1px solid grey;
+  /* border-bottom: 1px solid grey; */
 }
