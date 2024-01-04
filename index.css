@@ -113,6 +113,7 @@ section.travelDetails{
 }
 section.travelDetails  div span{
   text-transform: uppercase;
+  font-size: 0.65rem;
 }
 section.details {
   display: flex;
@@ -136,6 +137,7 @@ i.fa-exchange{
   transform:rotate(90deg);
 }
 section.travelDetails > section:nth-child(2){
+  width: 100%;
   padding-block: 1rem;
   display: flex;
   justify-content: space-between;
@@ -169,15 +171,15 @@ section.travelDetails > section:nth-child(2)
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 1rem;
+    padding-block: 1em;
     border-top: 1px solid grey;
     > button{
       color: white;
-      padding-block: .5rem;
-      padding-inline: 1rem;
+      padding-block: .5em;
+      padding-inline: 1em;
       border-color: transparent;
-      border-radius: 2rem;
-      box-shadow: 0 0 .5rem;
+      border-radius: 2em;
+      box-shadow: 0 0 .5em;
       background-color: #F5CF68;
       text-transform: uppercase;
     }
@@ -193,6 +195,6 @@ footer{
 }
 @media screen and (max-width:400px) {
 *{
-  font-size: 12px;
+  font-size: 15px;
 }
 }
